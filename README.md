@@ -15,3 +15,11 @@ Add:
 dtparam=spi=on
 dtoverlay=enc28j60
 ```
+
+## Enable W5500 ethernet shield
+Edit: `/boot/config.txt`
+Add:
+```
+dtoverlay=anyspi,spi0-0,dev="w5500",speed=30000000
+dtoverlay=w5500
+```
